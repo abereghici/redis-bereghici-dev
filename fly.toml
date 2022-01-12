@@ -1,0 +1,13 @@
+# fly.toml file generated for redis-bereghici-dev on 2021-12-13T13:25:13+02:00
+
+app = "redis-bereghici-dev"
+
+[env]
+  PRIMARY_REGION = "fra"
+
+[experimental]
+  auto_rollback = false
+
+[mount]
+  destination = "/data"
+  source = "redis_server"
